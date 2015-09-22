@@ -1,30 +1,34 @@
 <html>
-   <head>
-      <title>The jQuery Example</title>
-      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		
-      <script type="text/javascript" language="javascript">
-         $(document).ready(function() {
-            $("#driver").click(function(event){
-               var name = $("#name").val();
-               $("#stage").load('/result.php', {"name":name} );
-            });
-         });
-      </script>
-		
-   </head>
-	
-   <body>
-	
-      <p>Enter your name and click on the button:</p>
-      <input type="input" id="name" size="40" /><br />
-		
-      <div id="stage" style="background-color:cc0;">
-         STAGE
-      </div>
-		
-      <input type="button" id="driver" value="Show Result" />
-		
-   </body>
-	
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <title></title>
+    </head>
+    <body>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="btn btn-success" id="hw">
+                        Hello world </p>
+                </div>
+                <table id="hw2" class="table table-bordered table-responsive table-hover">
+                    <tr class="danger">
+                        <td>Id fac (AI)</td>
+                        <td>num Fac</td>
+                        <td>date</td>
+                        <td>TVA</td>
+                    </tr> 
+                </table>
+            </div>
+
+
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/test.js"></script>
+    </body>
 </html>
